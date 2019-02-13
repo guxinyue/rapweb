@@ -53,6 +53,13 @@ npm run build
 serve -s ./build -p 80
 ```
 
+### docker
+```sh
+docker build -t ngn .
+					
+docker run -d --name ngn1 -p 81:80 -v /Users/bipaohu/myhome/remote/docker/nginx/default.conf:/etc/nginx/conf.d/default.conf  -e NODE_ENV=production ngn
+```
+
 ## Author
 
 * Owner: Alimama FE Team
